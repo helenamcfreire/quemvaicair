@@ -1,0 +1,26 @@
+<div class="title">
+
+  QUEM VAI CAIR ? VASCO, FLUMINENSE OU OS DOIS ?
+
+
+  <input type="button" value="CLIQUE AQUI E FAÇA SUA APOSTA" class="button"/>
+
+  <%= form_for @payment, :url => {:controller => 'home', :action => 'apostar'} do |f| %>
+      <%= f.hidden_field :amount %>
+      <%= f.hidden_field :digital %>
+      <%= f.hidden_field :recurring %>
+      <%= f.hidden_field :popup %>
+      <%= f.submit 'Pay' %>
+  <% end %>
+
+</div>
+
+<section class="explanation">
+  <div class="wrap">
+      APOSTE 10 REAIS NO TIME QUE VOCÊ ACHA QUE VAI CAIR.
+
+      O DINHEIRO ARRECADADO SERÁ DISTRIBUÍDO ENTRE OS APOSTADORES QUE ACERTAREM O PALPITE!
+
+      BOA SORTE !!!
+  </div>
+</section>
