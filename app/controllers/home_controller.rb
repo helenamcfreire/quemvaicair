@@ -33,9 +33,8 @@ class HomeController < ApplicationController
 
     else
       flash[:error] = I18n.t :error
+      redirect_to root_path
     end
-
-    redirect_to root_path
 
   end
 
