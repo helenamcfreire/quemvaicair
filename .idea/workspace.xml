@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1700b509-e760-465e-9590-ec67f2d2214a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/notifier_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/notifier_controller.rb" />
     </list>
     <ignored path="quemvaicair.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,11 +57,11 @@
       <file leaf-file-name="home_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="5" selection-start="88" selection-end="88" vertical-scroll-proportion="0.11409396">
+            <state line="23" column="20" selection-start="494" selection-end="494" vertical-scroll-proportion="0.43736017">
               <folding>
                 <element signature="e#186#201#0" expanded="true" />
                 <element signature="e#431#440#0" expanded="true" />
-                <element signature="e#893#906#0" expanded="true" />
+                <element signature="e#894#907#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -678,11 +677,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="5" selection-start="88" selection-end="88" vertical-scroll-proportion="0.11409396">
+        <state line="23" column="20" selection-start="494" selection-end="494" vertical-scroll-proportion="0.43736017">
           <folding>
             <element signature="e#186#201#0" expanded="true" />
             <element signature="e#431#440#0" expanded="true" />
-            <element signature="e#893#906#0" expanded="true" />
+            <element signature="e#894#907#0" expanded="true" />
           </folding>
         </state>
       </provider>

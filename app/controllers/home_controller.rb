@@ -19,7 +19,7 @@ class HomeController < ApplicationController
       payment.items << {
           id: @order.product_id,
           description: t(:bolao),
-          amount: 1.00,
+          amount: 10.00,
           weight: 0
       }
 
