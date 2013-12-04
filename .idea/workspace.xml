@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1700b509-e760-465e-9590-ec67f2d2214a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
     </list>
     <ignored path="quemvaicair.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -12,7 +11,7 @@
     <file path="/routes.rb" changelist="1700b509-e760-465e-9590-ec67f2d2214a" time="1385937999609" ignored="false" />
     <file path="/home_controller.rb" changelist="1700b509-e760-465e-9590-ec67f2d2214a" time="1386173054066" ignored="false" />
     <file path="/index.html.erb" changelist="1700b509-e760-465e-9590-ec67f2d2214a" time="1386178981797" ignored="false" />
-    <file path="/application.html.erb" changelist="1700b509-e760-465e-9590-ec67f2d2214a" time="1386175742159" ignored="false" />
+    <file path="/application.html.erb" changelist="1700b509-e760-465e-9590-ec67f2d2214a" time="1386181473586" ignored="false" />
     <file path="/style.css" changelist="1700b509-e760-465e-9590-ec67f2d2214a" time="1386165974528" ignored="false" />
     <file path="/application.css" changelist="1700b509-e760-465e-9590-ec67f2d2214a" time="1385938446746" ignored="false" />
     <file path="/a.dummy" changelist="1700b509-e760-465e-9590-ec67f2d2214a" time="1386171858343" ignored="false" />
@@ -55,10 +54,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="home_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="home_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="19" selection-start="461" selection-end="461" vertical-scroll-proportion="0.39932886">
+            <state line="21" column="19" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#186#201#0" expanded="true" />
                 <element signature="e#431#440#0" expanded="true" />
@@ -77,10 +76,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="77" selection-start="273" selection-end="273" vertical-scroll-proportion="-5.230769">
+            <state line="31" column="0" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.60714287">
               <folding />
             </state>
           </provider>
@@ -122,9 +121,9 @@
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/locales/en.yml" />
         <option value="$PROJECT_DIR$/app/controllers/notifier_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -680,10 +679,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="77" selection-start="273" selection-end="273" vertical-scroll-proportion="-5.230769">
-          <folding />
+        <state line="21" column="19" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#186#201#0" expanded="true" />
+            <element signature="e#431#440#0" expanded="true" />
+            <element signature="e#893#906#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -694,14 +697,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="19" selection-start="461" selection-end="461" vertical-scroll-proportion="0.39932886">
-          <folding>
-            <element signature="e#186#201#0" expanded="true" />
-            <element signature="e#431#440#0" expanded="true" />
-            <element signature="e#893#906#0" expanded="true" />
-          </folding>
+        <state line="31" column="0" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.60714287">
+          <folding />
         </state>
       </provider>
     </entry>
