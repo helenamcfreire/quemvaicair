@@ -3,6 +3,7 @@ class HomeController < ApplicationController
 
   def index
     @order = Order.new
+    @orders = Order.all.count
   end
 
   def create
