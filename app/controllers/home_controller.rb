@@ -31,9 +31,15 @@ class HomeController < ApplicationController
         redirect_to response.url
       end
 
+      @product = Product.find(@order.product_id)
+
+      #Envio de e-mail
+      message = NotifierController.sendmail(@order.email, @product.nome)  # => Returns a Mail::Message object
+      message.deliver
+
     else
       flash[:error] = I18n.t :error
-      redirect_to root_path
+      redirect_to 'http://quemvaicair.herokuapp.com/#form-pay'
     end
 
   end

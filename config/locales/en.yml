@@ -6,3 +6,6 @@ en:
   bolao: "Bolão dos Desesperados"
   success: "Parabéns, você já está participando do bolão !!!"
   error: "Ooops, algo deu errado! Será que você não esqueceu de informar algum dado ?"
+  confirm: "Confirmação de participação no Bolão dos Desesperados"
+  body_email: "Seu palpite no bolão foi "
+  sorte: ". Após a confirmação do pagamento, sua participação no bolão estará garantida. Boa Sorte !!!"
