@@ -7,8 +7,9 @@ gem 'rails', '3.2.9'
 
 gem 'pg'
 
-gem 'paypal-express'
+gem 'pagseguro-oficial', git: 'git://github.com/pagseguro/ruby.git'
 
+gem 'mini_portile', '~> 0.5.2'
 
 # Gems used only for assets and not required
 # in production environments by default.

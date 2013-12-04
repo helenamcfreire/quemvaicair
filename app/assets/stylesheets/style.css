@@ -25,6 +25,12 @@ input[type=button] {
     color: #273A45;
 }
 
+.form-pay {
+    background-color: #ffffff;
+    padding: 150px 0;
+    color: #70838C;
+}
+
 .wrap {
     max-width: 1100px;
     width: 90%;
@@ -62,8 +68,12 @@ input[type=button] {
 
 input[type=submit] {
     text-indent: -9999px;
-    width: 150px;
-    height: 33px;
+    width: 118px;
+    height: 53px;
     border: none;
-    background: url(https://www.paypal.com/en_US/i/btn/btn_dg_pay_w_paypal.gif);
+    background: url(https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/120x53-pagar.gif);
+}
+
+a:hover {
+    text-decoration: none;
 }

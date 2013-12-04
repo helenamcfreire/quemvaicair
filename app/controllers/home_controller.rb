@@ -2,22 +2,39 @@ class HomeController < ApplicationController
 
 
   def index
-    @payment = Payment.digital.popup.build
+    @order = Order.new
   end
 
-  def apostar
+  def create
+    @order = Order.new(params[:order])
 
-    payment = Payment.create! params[:payment]
-    payment.setup!(
-        'http://quemvaicair.herokuapp.com',
-        'http://quemvaicair.herokuapp.com'
-    )
-    if payment.popup?
-      redirect_to payment.popup_uri
+    if @order.save
+      flash[:success] = I18n.t :success
     else
-      redirect_to payment.redirect_uri
+      flash[:error] = I18n.t :error
+    end
+
+    payment = PagSeguro::PaymentRequest.new
+    payment.reference = @order.id
+    payment.redirect_url = 'http://quemvaicair.herokuapp.com'
+
+    payment.items << {
+        id: @order.product_id,
+        description: t(:bolao),
+        amount: 1.00,
+        weight: 0
+    }
+
+    response = payment.register
+
+    if response.errors.any?
+      raise response.errors.join("\n")
+    else
+      redirect_to response.url
     end
 
   end
+
+
 
 end

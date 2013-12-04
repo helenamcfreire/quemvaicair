@@ -2,16 +2,7 @@
 
   QUEM VAI CAIR ? VASCO, FLUMINENSE OU OS DOIS ?
 
-
-  <input type="button" value="CLIQUE AQUI E FAÇA SUA APOSTA" class="button"/>
-
-  <%= form_for @payment, :url => {:controller => 'home', :action => 'apostar'} do |f| %>
-      <%= f.hidden_field :amount %>
-      <%= f.hidden_field :digital %>
-      <%= f.hidden_field :recurring %>
-      <%= f.hidden_field :popup %>
-      <%= f.submit 'Pay' %>
-  <% end %>
+  <a href="#form-pay" class="button">CLIQUE AQUI E FAÇA SUA APOSTA</a>
 
 </div>
 
@@ -24,3 +15,53 @@
       BOA SORTE !!!
   </div>
 </section>
+
+<section class="form-pay" id="form-pay">
+  <div class="wrap">
+
+    <%= form_for @order, :url => {:controller => 'home', :action => 'create'} do |t| %>
+
+          <h2 class="tutorial-title">QUAL TIME VOCÊ ESCOLHE ?</h2>
+
+              <%= t.text_field :nome, :class => "input-medium", :id => "input01", :maxlength => 50, :style => "width: 30%", :placeholder => 'Informe seu nome *' %><br/>
+              <%= t.text_field :email, :class => "input-medium", :id => "input02", :maxlength => 100, :style => "width: 30%", :placeholder => 'Informe seu e-mail *'  %><br/>
+              <%= t.select :product_id, Product.all.collect {|c| [ c.nome, c.id ] }, :include_blank => 'Escolha o time *' %><br/>
+              <%= t.submit 'APOSTAR' %>
+
+              <% if flash[:error] -%>
+                  <p style="color: #da4f49">
+                    <%=h flash[:error] %>
+                  </p>
+              <% end -%>
+              <% if flash[:success] -%>
+                  <p style="color: #5cb85c">
+                    <%=h flash[:success] %>
+                  </p>
+              <% end -%>
+
+    <% end %>
+
+  </div>
+</section>
+
+<!-- Smooth anchor -->
+<script>
+
+    $(document).ready(function(){
+
+        $('a[href^="#"]').on('click',function (e) {
+            e.preventDefault();
+
+            var target = this.hash,
+                    $target = $(target);
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing', function () {
+                window.location.hash = target;
+            });
+        });
+
+    });
+
+</script>

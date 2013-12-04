@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/pagseguro/ruby.git
+  revision: 6631efb74fd5dc343e1a4a31d9d7e16e44b6daa2
+  specs:
+    pagseguro-oficial (2.0.2)
+      aitch
+      i18n
+      json
+      nokogiri
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -28,8 +38,10 @@ GEM
     activesupport (3.2.9)
       i18n (~> 0.6)
       multi_json (~> 1.0)
+    aitch (0.2.1)
+      activesupport
+      nokogiri (>= 1.6.0)
     arel (3.0.2)
-    attr_required (0.0.5)
     builder (3.0.4)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -53,11 +65,10 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.23)
+    mini_portile (0.5.2)
     multi_json (1.7.3)
-    paypal-express (0.5.4)
-      activesupport (>= 2.3)
-      attr_required (>= 0.0.5)
-      restclient_with_cert
+    nokogiri (1.6.0-x86-mingw32)
+      mini_portile (~> 0.5.0)
     pg (0.15.1-x86-mingw32)
     polyglot (0.3.3)
     rack (1.4.5)
@@ -85,10 +96,6 @@ GEM
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
-    rest-client (1.6.7)
-      mime-types (>= 1.16)
-    restclient_with_cert (0.0.8)
-      rest-client (>= 1.6)
     sass (3.2.9)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -115,7 +122,8 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
-  paypal-express
+  mini_portile (~> 0.5.2)
+  pagseguro-oficial!
   pg
   rails (= 3.2.9)
   sass-rails (~> 3.2.3)

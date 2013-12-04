@@ -11,40 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131203181951) do
+ActiveRecord::Schema.define(:version => 20131204130302) do
 
-  create_table "payments", :force => true do |t|
-    t.integer  "amount",     :default => 1
-    t.string   "token"
-    t.string   "identifier"
-    t.string   "payer_id"
-    t.boolean  "recurring",  :default => false
-    t.boolean  "digital",    :default => false
-    t.boolean  "popup",      :default => false
-    t.boolean  "completed",  :default => false
-    t.boolean  "canceled",   :default => false
-    t.datetime "created_at",                    :null => false
-    t.datetime "updated_at",                    :null => false
+  create_table "orders", :force => true do |t|
+    t.string   "nome"
+    t.string   "email"
+    t.integer  "product_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
-  create_table "pessoa_chats", :force => true do |t|
-    t.string "pessoa_id"
-    t.string "evento_id"
-    t.string "chat_id"
-  end
-
-  create_table "pessoas", :force => true do |t|
-    t.string   "uid",        :default => "", :null => false
-    t.string   "nome",       :default => "", :null => false
-    t.datetime "created_at",                 :null => false
-    t.datetime "updated_at",                 :null => false
-  end
-
-  create_table "registereds", :force => true do |t|
-    t.string   "email",      :default => "", :null => false
-    t.datetime "created_at",                 :null => false
-    t.datetime "updated_at",                 :null => false
-    t.string   "location"
+  create_table "products", :force => true do |t|
+    t.string   "nome"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end

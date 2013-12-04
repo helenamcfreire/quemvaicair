@@ -3,3 +3,6 @@
 
 en:
   hello: "Hello world"
+  bolao: "Bolão dos Desesperados"
+  success: "Parabéns, você já está participando do bolão !!!"
+  error: "Ooops, algo deu errado! Será que você não esqueceu de informar algum dado ?"
